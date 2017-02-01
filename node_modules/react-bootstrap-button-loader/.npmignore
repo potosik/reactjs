@@ -1,0 +1,11 @@
+.idea
+.babelrc
+.eslintrc
+.istanbul.yml
+.travis.yml
+coverage
+demo
+docs
+src
+test
+webpack.release.js

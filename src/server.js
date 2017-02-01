@@ -47,6 +47,7 @@ function renderHTML(componentHTML) {
       </head>
       <body>
         <div id="react-view">${componentHTML}</div>
+        <div id="dev-tools"></div>
         <script type="application/javascript" src="${assetUrl}/public/assets/bundle.js"></script>
       </body>
     </html>
