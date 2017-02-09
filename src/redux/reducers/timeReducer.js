@@ -1,4 +1,5 @@
 import { TIME_REQUEST_STARTED, TIME_REQUEST_FINISHED, TIME_REQUEST_ERROR } from 'redux/actions/timeActions';
+import { SIGN_OUT } from 'redux-oauth';
 
 const initialState = {
   time: null,
@@ -18,6 +19,8 @@ export default function (state = initialState, action) {
       };
     case TIME_REQUEST_ERROR:
       return Object.assign({}, state, { loading: false, errors: action.errors });
+    case SIGN_OUT:
+      return initialState;
     default:
       return state;
   }
